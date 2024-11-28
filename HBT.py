@@ -36,7 +36,7 @@ def run_experiment(num_trials):
 
     win = visual.Window([1366, 768], color=[0.5, 0.5, 0.5], fullscr=True)  
 
-    results_file = r'C:\Users\SALVO DIANA\Desktop\LAVORO\progetto BoSe\progetto SBH\paradigma sperimentale\COUNTING.xlsx'
+    results_file = r'C:\Users\SALVO DIANA\Desktop\counting GITHUB.xls'
     if os.path.isfile(results_file):
         df = read_excel_alternative(results_file)
     else:
