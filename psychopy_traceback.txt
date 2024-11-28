@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "C:\Program Files\PsychoPy\lib\site-packages\psychopy\app\coder\coder.py", line 2870, in onPavloviaSync
+    pavlovia_ui.syncProject(parent=self, file=self.currentDoc.filename, project=self.project)
+  File "C:\Program Files\PsychoPy\lib\site-packages\psychopy\app\pavlovia_ui\project.py", line 854, in syncProject
+    project.sync()
+  File "C:\Program Files\PsychoPy\lib\site-packages\psychopy\projects\pavlovia.py", line 873, in sync
+    self.firstPush(infoStream=infoStream)
+  File "C:\Program Files\PsychoPy\lib\site-packages\psychopy\projects\pavlovia.py", line 1116, in firstPush
+    info = self.repo.git.push('-u', self.remoteWithToken, 'master')
+  File "C:\Program Files\PsychoPy\lib\site-packages\git\cmd.py", line 638, in <lambda>
+    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)
+  File "C:\Program Files\PsychoPy\lib\site-packages\git\cmd.py", line 1183, in _call_process
+    return self.execute(call, **exec_kwargs)
+  File "C:\Program Files\PsychoPy\lib\site-packages\git\cmd.py", line 983, in execute
+    raise GitCommandError(redacted_command, status, stderr_value, stdout_value)
+git.exc.GitCommandError: Cmd('C:\Program Files\PsychoPy\MinGit\cmd\git.exe') failed due to: exit code(1)
+  cmdline: C:\Program Files\PsychoPy\MinGit\cmd\git.exe push -u https://oauth2:*****@gitlab.pavlovia.org/salvatore.diana/hbt_suono master
+  stderr: 'error: src refspec master does not match any.
+error: failed to push some refs to 'https://oauth2:602e5e0d4fd692f85682bd0f8a1ab40519c593d231b6f4127c78db7bd7e0567d@gitlab.pavlovia.org/salvatore.diana/hbt_suono''
